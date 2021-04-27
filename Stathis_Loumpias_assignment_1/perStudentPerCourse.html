@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="images/logo.png" type="images/jpg" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body id="wrapper">
+    <header>
+      <div>
+        <img src="images/logo.png" alt="learn to fly" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Courses.html">Courses</a></li>
+          <li>
+            <a href="Trainers.html">Trainers</a>
+            <ul>
+              <li>
+                <a href="trainersPerCourse.html">Per Course</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="Students.html">Students</a>
+            <ul>
+              <li><a href="studentsPerCourse.html">Per Course</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Assingments.html">Assignments</a>
+            <ul>
+              <li>
+                <a href="perStudentPerCourse.html" class="current"
+                  >Per student Per Course</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="form">
+        <label><b>Title</b></label>
+        <input type="text" name="input1" id="title" />
+
+        <label><b>Description</b></label>
+        <input type="text" name="input2" id="description" />
+
+        <label><b>Sub Date Time </b></label>
+        <input type="date" name="input3" id="subDateTime" />
+
+        <label><b>Oral Mark</b></label>
+        <input type="number" name="input4" id="oralMark" />
+
+        <label><b>Total Mark </b></label>
+        <input type="number" name="input5" id="totalMark" />
+
+        <label><b>First Name</b></label>
+        <input type="text" name="input6" id="firstName" />
+
+        <label><b>Last Name</b></label>
+        <input type="text" name="input7" id="lastName" />
+
+        <label><b>Date of birth</b></label>
+        <input type="date" name="input8" id="dateOfBirth" />
+
+        <label><b>Tuition Fees </b></label>
+        <input type="number" name="input9" id="tuitionFees" />
+
+        <label><b>Stream</b></label>
+        <select name="input10" id="stream">
+          <option value="Java">Java</option>
+          <option value="C#">C#</option>
+          <option value="Javascript">Javascript</option>
+        </select>
+
+        <label><b>Type</b></label>
+        <input type="text" name="input11" id="type" />
+
+        <label><b>Date </b></label>
+        <input type="date" name="input12" id="startDate" />
+
+        <label><b>End Date</b></label>
+        <input type="date" name="input13" id="endDate" />
+
+        <label>
+          <input type="submit" value="Add" onclick="addHtmlTableRow();" />
+          <input type="submit"value="Edit"onclick="editHtmlTbleSelectedRow();" />
+        </label>
+      </div>
+      <div>
+        <table border="1" id="table">
+          <tr id="top">
+            <td><b>Title</b>Title</td>
+            <td><b>Description</b></td>
+            <td><b>Sub Date Time</b></td>
+            <td><b>Oral Mark</b></td>
+            <td><b>Total Mark</b></td>
+            <td><b>First Name</b></td>
+            <td><b>Last Name</b></td>
+            <td><b>Date Of Birth</b></td>
+            <td><b>Tuition Fees</b></td>
+            <td><b>Stream</b></td>
+            <td><b>Type</b></td>
+            <td><b>Start Date</b></td>
+            <td><b>End Date</b></td>
+            <td><b>Action</b></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <h4>Connect with us</h4>
+        <a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+        <a href="#"><img src="images/instagram.png" alt="facebook" /></a>
+        <a href="#"><img src="images/twitter.png" alt="facebook" /></a>
+        <div>
+          <p>Info-Support-Marketing</p>
+          <p>Terms of use-Privacy policy</p>
+          <p>
+            <img src="images/copyright.png" alt="copyright" />2020 Stathis
+            Loumpias
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script src="js/perStudentPerCourse.js"></script>
+  </body>
+</html>

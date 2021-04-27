@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignments</title>
+    <link rel="icon" href="images/logo.png" type="images/jpg" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body id="wrapper">
+    <header>
+      <div>
+        <img src="images/logo.png" alt="learn to fly" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Courses.html">Courses</a></li>
+          <li>
+            <a href="Trainers.html">Trainers</a>
+            <ul>
+              <li>
+                <a href="trainersPerCourse.html">Per Course</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="Students.html">Students</a>
+            <ul>
+              <li><a href="studentsPerCourse.html">Per Course</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="Assingments.html" class="current">Assignments</a>
+            <ul>
+              <li>
+                <a href="perStudentPerCourse.html">Per student Per Course</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div id="form">
+        <label><b>Title</b></label>
+        <input type="text" name="title" id="title" />
+
+        <label><b>Description</b></label>
+        <input type="text" name="description" id="description" />
+
+        <label><b>Sub Date Time</b></label>
+        <input type="date" name="subDateTime" id="subDateTime" />
+
+        <label><b>Oral Mark</b></label>
+        <input type="number" name="oranlMark" id="oranlMark" />
+
+        <label><b>Total Mark</b></label>
+        <input type="number" name="totalMark" id="totalMark" />
+
+        <label>
+          <input type="submit" value="Add" onclick="addHtmlTableRow();" />
+          <input type="submit" value="Edit"onclick="editHtmlTbleSelectedRow();" />
+      
+        </label>
+      </div>
+      <div>
+        <table border="1" id="table">
+          <tr id="top">
+            <td><b>Title</b></td>
+            <td><b>Description</b></td>
+            <td><b>Sub Date Time</b></td>
+            <td><b>Oral Mark</b></td>
+            <td><b>Total Mark</b></td>
+            <td id="actions"><b>Actions</b></td>
+          </tr>
+        </table>
+      </div>
+    </main>
+    <footer>
+      <section>
+        <h4>Connect with us</h4>
+        <a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+        <a href="#"><img src="images/instagram.png" alt="facebook" /></a>
+        <a href="#"><img src="images/twitter.png" alt="facebook" /></a>
+        <div>
+          <p>Info-Support-Marketing</p>
+          <p>Terms of use-Privacy policy</p>
+          <p>
+            <img src="images/copyright.png" alt="copyright" />2020 Stathis
+            Loumpias
+          </p>
+        </div>
+      </section>
+    </footer>
+    <script src="js/assingments.js"></script>
+  </body>
+</html>
